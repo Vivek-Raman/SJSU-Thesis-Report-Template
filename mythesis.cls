@@ -21,6 +21,8 @@
 % ==========================================
 % RULE 3 & 4: TEXT FORMATTING
 % ==========================================
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
 \RaggedRight % Enforces left-justification only
 
 % ==========================================
