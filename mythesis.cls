@@ -24,6 +24,8 @@
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
 \RaggedRight % Enforces left-justification only
+\sloppy 
+\setlength{\emergencystretch}{3em}
 
 % ==========================================
 % RULE 5: SPACING
