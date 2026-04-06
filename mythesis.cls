@@ -122,7 +122,7 @@
     \thispagestyle{empty}
     \vspace*{2in}
     \begin{center}
-        [Insert Official Signature Page Here]
+        [Replace this page with the Official SJSU Signature Page]
     \end{center}
     \clearpage
 }
