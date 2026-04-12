@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mythesis}[2026/03/16 Custom Thesis Class overriding IEEEtran]
+\ProvidesClass{SJSUthesis}[2026/03/16 Custom Thesis Class overriding IEEEtran]
 
 % Pass standard options to IEEEtran. Force 12pt and onecolumn.
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{IEEEtran}}
@@ -15,6 +15,7 @@
 \RequirePackage{titlesec} % Rule 7: Section breaks
 \RequirePackage{etoolbox} % Rule 8: Patching environments
 \RequirePackage{mathptmx} % Rule 4: Professional 12pt font (Times clone)
+\RequirePackage{graphicx} % For figures
 \RequirePackage{caption} % Rule 10: Caption formatting
 \RequirePackage{tocloft} % Rule 12: ToC styling
 
@@ -65,6 +66,7 @@
 % ==========================================
 % RULE 10: CAPTIONS AND FLOATS
 % ==========================================
+% Ensure captions are single spaced. 8pt is permitted inside tables/figures.
 \captionsetup{font={singlespacing, small}, parindent=0pt}
 \captionsetup[figure]{justification=centering, parindent=0pt, singlelinecheck=true}
 \AtBeginEnvironment{table}{%
@@ -87,7 +89,6 @@
   \setlength{\parindent}{0pt}%
   \setlength{\RaggedRightParindent}{0pt}%
 }
-
 % ==========================================
 % RULE 12: TABLE OF CONTENTS DEPTH
 % ==========================================
